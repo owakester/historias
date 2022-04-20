@@ -5,12 +5,12 @@ class MyModelName(models.Model):
     """
 
     # Campos
-    my_field_name = models.CharField(max_length=20, help_text="Enter field documentation")
+    field_name = models.CharField(max_length=20, help_text="Enter field documentation")
     ...
 
     # Metadata
     class Meta:
-        ordering = ["-my_field_name"]
+        ordering = ["-field_name"]
 
     # Métodos
     def get_absolute_url(self):
